@@ -1,0 +1,4 @@
+Django==1.8.5
+argparse==1.2.1
+django-haystack==2.4.0
+wsgiref==0.1.2
