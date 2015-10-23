@@ -1,0 +1,16 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Django - Helper Solr Haystack{% endblock %}</title>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/ajax.js' %}"></script>
+  </head>
+  <body>
+    <h1>{{ static }}</h1>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{% if book.count > 0 %}
+  {% for book in books %}
+    <ul>
+      <li>
+        <a href="{{ book.object.get_absolute_url }}">{{ book.object.title}}</a>
+      </li>
+    </ul>
+  {% endfor %}
+{% else %}
+<ul>
+  <li>Nenhum resultado</li>
+</ul>
+{% endif %}
